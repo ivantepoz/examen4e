@@ -1,6 +1,6 @@
 //JavaScript
-$(document).ready(function(e) {
-$('#principal') .height($('#page1').height());
+$(document).ready(function(e){
+$('#principal').height($('#page1').height());
     document.addEventListener("deviceready",function(){
 		
     audio=window.plugins.LowLatencyAudio;
@@ -15,7 +15,7 @@ $('#principal') .height($('#page1').height());
 	
 $('.nota').bind('touchstart',function(){
 	$(this).addClass('tocada');
-	 audio.play((this).attr('id'));
+	 audio.play($(this).attr('id'));
 	 
 }).bind('touchend',function(){
 	$(this).removeClass('tocada');
